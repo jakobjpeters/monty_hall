@@ -133,7 +133,8 @@ P(success | keep) ≈ 0.33
         }
 
         for (strategy, count) in std::iter::zip(["switch", "keep"], counts) {
-            println!("P(success | {strategy}) ≈ {:.2}", count as f32 / n as f32);
+            println!("P(success | {strategy}) ≈ {:.2}",
+                count as f32 / n as f32);
         }
     }
   ```
